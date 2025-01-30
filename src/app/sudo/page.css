@@ -18,14 +18,15 @@
   border-radius: 50px;
   padding: 20px;
   display: flex;
-  flex-direction: column;
   justify-content: center;
   align-items: center;
 }
 .number {
   width: 200px;
   height: 200px;
-  background-color: rgb(255, 255, 255);
+  background-image: url(https://imgcdn.stablediffusionweb.com/2024/11/30/3d8bc085-78da-4556-8665-53ba273e03f2.jpg);
+  background-position: center;
+  background-size: 119%;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -57,9 +58,11 @@
   transition: all 0.4s ease-in-out;
 }
 .buttons button:hover {
+  translate: 0px -5px;
+}
+.buttons button:focus {
   background-color: black;
   color: white;
-  translate: 0px -10px;
 }
 .number:hover {
   background-image: url(https://imgcdn.stablediffusionweb.com/2024/11/30/3d8bc085-78da-4556-8665-53ba273e03f2.jpg);
@@ -68,4 +71,18 @@
   /* background-size: cover; */
   text-shadow: 4px 4px 2px black;
   translate: 0px -10px;
+}
+.number p {
+  font-size: 80px;
+  font-style: oblique;
+  font-weight: 900;
+  text-shadow: 0px 10px 9px yellow;
+}
+.header p {
+  font-size: 50px;
+  font-family: fantasy;
+  font-weight: bold;
+  font-style: italic;
+  color: yellow;
+  letter-spacing: 3px;
 }

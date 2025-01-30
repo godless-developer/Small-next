@@ -18,6 +18,9 @@ export default function Page() {
   };
   return (
     <div className="container">
+      <div className="header">
+        <p>Tuka's design</p>
+      </div>
       <div className="buttons">
         <button
           onClick={() => {
@@ -35,9 +38,9 @@ export default function Page() {
         </button>
       </div>
       <div className="numbers">
-        {numbers.map((number) => {
+        {numbers.map((number, index) => {
           return (
-            <div className="number">
+            <div key={index} className="number">
               <p>{number}</p>
             </div>
           );
